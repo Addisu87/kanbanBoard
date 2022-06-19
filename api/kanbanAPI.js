@@ -5,6 +5,7 @@ export default class KanbanAPI {
     if (!column) {
       return [];
     }
+
     return column.items;
   }
 
@@ -13,7 +14,7 @@ export default class KanbanAPI {
     const column = data.find((column) => column.id == columnId);
     const item = {
       id: Math.floor(Math.random() * 100000),
-      content: content
+      content
     };
 
     if (!column) {
@@ -45,11 +46,12 @@ export default class KanbanAPI {
     item.content =
       newProps.content === undefined ? item.content : newProps.content;
 
-    // update column and position
+    // Update column and position
     if (newProps.columnId !== undefined && newProps.position !== undefined) {
       const targetColumn = data.find(
         (column) => column.id == newProps.columnId
       );
+
       if (!targetColumn) {
         throw new Error('Target column not found.');
       }
@@ -60,10 +62,11 @@ export default class KanbanAPI {
       // Move item into it's new column and position
       targetColumn.items.splice(newProps.position, 0, item);
     }
+
     save(data);
   }
 
-  static deleteItem(itemId, newProps) {
+  static deleteItem(itemId) {
     const data = read();
 
     for (const column of data) {
