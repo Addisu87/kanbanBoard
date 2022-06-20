@@ -39,7 +39,6 @@ export default class DropZone {
         ? dropZone.parentElement
         : dropZone;
 
-      // protect bugs
       if (droppedItemElement.contains(dropZone)) {
         return;
       }
