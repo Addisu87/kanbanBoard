@@ -7,8 +7,7 @@ export default class DropZone {
     range.selectNode(document.body);
 
     const dropZone = range.createContextualFragment(
-      `<div class="kanban__dropzone"></div>
-      `,
+      '<div class="kanban__dropzone"></div>',
     ).children[0];
 
     dropZone.addEventListener('dragover', (e) => {
