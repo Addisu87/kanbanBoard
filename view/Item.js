@@ -1,5 +1,5 @@
 import DropZone from './DropZone.js';
-import KanbanAPI from '../api/KanbanAPI.js';
+import KanbanAPI from '../api/kanbanAPI.js';
 
 export default class Item {
   constructor(id, content) {
@@ -8,7 +8,7 @@ export default class Item {
     this.elements = {};
     this.elements.root = Item.createRoot();
     this.elements.input = this.elements.root.querySelector(
-      '.kanban__item-input'
+      '.kanban__item-input',
     );
 
     this.elements.root.dataset.id = id;
@@ -19,14 +19,14 @@ export default class Item {
     const onBlur = () => {
       const newContent = this.elements.input.textContent.trim();
 
-      if (newContent == this.content) {
+      if (newContent === this.content) {
         return;
       }
 
       this.content = newContent;
 
       KanbanAPI.updateItem(id, {
-        content: this.content
+        content: this.content,
       });
     };
 
@@ -57,9 +57,8 @@ export default class Item {
     range.selectNode(document.body);
 
     return range.createContextualFragment(`
-			<div class="kanban__item" draggable="true">
-				<div class="kanban__item-input" contenteditable></div>
-			</div>
-		`).children[0];
+      <div class="kanban__item" draggable="true">
+        <div class="kanban__item-input" contenteditable></div>
+      </div>`).children[0];
   }
 }
