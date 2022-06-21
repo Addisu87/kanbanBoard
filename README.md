@@ -1,6 +1,6 @@
 # Kanband-board
 
-> Description the project.
+> A kanban board to show a list of projects and their progress.
 
 ## Built With
 
@@ -10,7 +10,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://addisu87.github.io/kanbanBoard/dist)
 
 ## Getting Started
 
@@ -18,29 +18,34 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Any code editor like visual studio code or Atom.
+
 ### Setup
+
+- git clone git@github.com:Addisu87/kanbanBoard.git
 
 ### Install
 
+- npm install
+
 ### Usage
 
-### Run tests
-
-### Deployment
+- npm run build
+- npm start
 
 ## Authors
 
-👤 **Author1**
+👤 **Addisu Haile**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Addisu87](https://github.com/Addisu87)
+- Twitter: [@AddisuTedla](https://twitter.com/AddisuTedla)
+- LinkedIn: [Addisu Tedla](https://www.linkedin.com/in/addisu-tedla-8b4a10143/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Addisu87/kanbanBoard/issues).
 
 ## Show your support
 
