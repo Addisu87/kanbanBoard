@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [Addisu87](https://github.com/Addisu87)
 - Twitter: [@AddisuTedla](https://twitter.com/AddisuTedla)
-- LinkeIn: [Addisu Tedla](https://www.linkedin.com/in/addisu-tedla-8b4a10143/)
+- LinkedIn: [Addisu Tedla](https://www.linkedin.com/in/addisu-tedla-8b4a10143/)
 
 ## 🤝 Contributing
 
